@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Prediction Result</h1>
+        <img src="{{ url_for('send_predicted_file', filename=img_file) }}">
+        <p>5초 후 돌아갑니다</p>
+        <script>
+            alert("5초 후 돌아갑니다");
+            setTimeout(function(){
+                window.location.href = "/gallery";
+            }, 5000);
+        </script>
+    </body>
+
+</html> 
+
+
